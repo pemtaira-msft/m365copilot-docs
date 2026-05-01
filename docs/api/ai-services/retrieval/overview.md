@@ -57,6 +57,7 @@ Organizations can use these built-in features to avoid expenses and complexities
 The Retrieval API allows you to retrieve data from the following data sources:
 
 - SharePoint
+- SharePoint Embedded
 - OneDrive
 - Copilot connectors
 
@@ -96,6 +97,8 @@ The following are the current throttling and other limitations to the Retrieval 
 
 - You need the **Files.Read.All** and **Sites.Read.All** permissions to retrieve SharePoint content using the Retrieval API.
 - You need the **Files.Read.All** and **Sites.Read.All** permissions to retrieve OneDrive content using the Retrieval API.
+- You need the **FileStorageContainer.Selected** permissions to retrieve SharePoint Embedded content using the Retrieval API.
+  - You must also set the `ContainerTypeId` in the `dataSourceConfiguration` when retrieving SharePoint Embedded content
 - You need the **ExternalItem.Read.All** permission to retrieve Copilot connectors content using the Retrieval API.
 - The Retrieval API is optimized for context recall.
 - The **queryString** request parameter has a limit of 1,500 characters.
