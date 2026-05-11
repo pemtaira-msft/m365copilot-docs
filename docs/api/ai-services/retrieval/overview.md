@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Copilot Retrieval API Overview
-description: "Use the Microsoft 365 Copilot Retrieval API to ground your AI solutions with accurate, secure, and contextually relevant data from SharePoint, OneDrive, and Copilot connectors."
+description: "Use the Microsoft 365 Copilot Retrieval API to ground your AI solutions with accurate, secure, and contextually relevant data from SharePoint, SharePoint Embedded, OneDrive, and Copilot connectors."
 author: lramosvea
 ms.author: lramosvea
 ms.localizationpriority: medium
@@ -14,15 +14,15 @@ The Microsoft 365 Copilot APIs provide access to components that power Copilot e
 
 The Retrieval API offers a streamlined solution for Retrieval Augmented Generation (RAG) without the need to replicate, index, chunk, and secure your data in a separate index. The API understands the user's context and intent and performs query transformations to yield the most relevant results, which is more difficult to achieve with lexical search or even basic RAG from alternate sources.
 
-RAG is essential when you're building generative AI solutions and want to use Microsoft 365 knowledge. When you implement RAG, your solutions can provide more accurate, contextually relevant responses grounded in the vast repository of your organizational data. The Retrieval API accomplishes RAG by extracting up-to-date and relevant text snippets from SharePoint, OneDrive, and Copilot connectors. The Retrieval API keeps your data in place and upholds your access and governance controls. The Retrieval API ensures that synthesized responses are informed by the latest and most relevant data. This process enhances the reliability and usefulness of your generative AI solutions.
+RAG is essential when you're building generative AI solutions and want to use Microsoft 365 knowledge. When you implement RAG, your solutions can provide more accurate, contextually relevant responses grounded in the vast repository of your organizational data. The Retrieval API accomplishes RAG by extracting up-to-date and relevant text snippets from SharePoint, SharePoint Embedded, OneDrive, and Copilot connectors. The Retrieval API keeps your data in place and upholds your access and governance controls. The Retrieval API ensures that synthesized responses are informed by the latest and most relevant data. This process enhances the reliability and usefulness of your generative AI solutions.
 
 To explore the API, [try a query in Graph Explorer](https://aka.ms/try_copilot_retrieval_API_overview).
 
 ## Why use the Retrieval API?
 
-The Retrieval API offers a secure and compliant way to retrieve relevant text chunks from SharePoint, OneDrive, and Copilot connectors while optimizing for context recall. Thus, you don't need to to egress data, break permissions, or compromise on security and compliance.
+The Retrieval API offers a secure and compliant way to retrieve relevant text chunks from SharePoint, SharePoint Embedded, OneDrive, and Copilot connectors while optimizing for context recall. Thus, you don't need to to egress data, break permissions, or compromise on security and compliance.
 
-Custom knowledge applications can use the Retrieval API to ground responses on organization-specific information stored in SharePoint, OneDrive, and Copilot connectors. Rather than building and maintaining separate vector indexes, these applications can instead retrieve relevant context from Microsoft 365 data sources to ground large language model (LLM) responses the same way that Microsoft 365 Copilot does.
+Custom knowledge applications can use the Retrieval API to ground responses on organization-specific information stored in SharePoint, SharePoint Embedded, OneDrive, and Copilot connectors. Rather than building and maintaining separate vector indexes, these applications can instead retrieve relevant context from Microsoft 365 data sources to ground large language model (LLM) responses the same way that Microsoft 365 Copilot does.
 
 Finance and legal applications that require high precision in information retrieval can use the API's filtering capabilities to scope searches to specific document libraries or content types, ensuring responses only include approved sources while respecting information barriers and access controls.
 
